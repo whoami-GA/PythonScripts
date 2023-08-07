@@ -31,7 +31,7 @@
  
          try:
  
-             s = remote(host ,port)
+             s = remote(host ,port, level='error')
  
              s.recvuntil(b"username> ")
              s.sendline(username)
