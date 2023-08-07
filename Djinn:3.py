@@ -33,9 +33,9 @@
  
              s = remote(host ,port)
  
-             s.recvntil(b"username> ")
+             s.recvuntil(b"username> ")
              s.sendline(username)
-             s.recvntil(b"password> ")
+             s.recvuntil(b"password> ")
              s.sendline(password)
  
              response = s.recv()
